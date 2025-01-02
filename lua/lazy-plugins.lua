@@ -23,6 +23,7 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
+  -- Show git changes in sign column, some useful keybinds for visualizing and operating on hunks in current buffer
   require 'kickstart/plugins/gitsigns',
 
   -- Show command options in window when using leader key and other commands
@@ -43,8 +44,10 @@ require('lazy').setup({
   -- Theme. :colorscheme to manually change this
   require 'kickstart/plugins/kanagawa',
 
+  -- Highlight and search for Todo comments and other specific keywords; use :TodoTelescope to view all Todos with Telescope
   require 'kickstart/plugins/todo-comments',
 
+  -- Smarter surround text replacement, other miscellaneous nice-to-haves
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
