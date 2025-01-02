@@ -25,17 +25,22 @@ require('lazy').setup({
 
   require 'kickstart/plugins/gitsigns',
 
+  -- Show command options in window when using leader key and other commands
   require 'kickstart/plugins/which-key',
 
+  -- Fuzzy finder and file navigator. <Leader>sh to search help, <Leader>sk to search keybindings
   require 'kickstart/plugins/telescope',
 
+  -- Setup LSPs on a per-language basis
   require 'kickstart/plugins/lspconfig',
 
+  -- Auto-formatter. <Leader>f to manually format current document
   require 'kickstart/plugins/conform',
 
+  -- Auto-completions. Ctrl Space to manually trigger; tab/shift tab to navigate suggestions, enter to confirm
   require 'kickstart/plugins/cmp',
 
-  -- require 'kickstart/plugins/tokyonight',
+  -- Theme. :colorscheme to manually change this
   require 'kickstart/plugins/kanagawa',
 
   require 'kickstart/plugins/todo-comments',
