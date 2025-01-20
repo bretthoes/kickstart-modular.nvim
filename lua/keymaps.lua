@@ -3,6 +3,7 @@
 
 -- Use 'jk' to exit insert mode
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Exit insert mode' })
+vim.keymap.set('v', 'jk', '<Esc>', { desc = 'Exit visual mode' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
