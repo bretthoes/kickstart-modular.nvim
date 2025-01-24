@@ -52,6 +52,9 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter',
 
+  -- Plugin for calling lazygit within neovim
+  require 'kickstart/plugins/lazygit',
+
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
   --  Here are some example plugins that I've included in the Kickstart repository.
