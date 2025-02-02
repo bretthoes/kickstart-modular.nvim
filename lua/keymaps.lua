@@ -34,6 +34,10 @@ vim.keymap.set('n', '<leader>e', ':Explore<CR>', { noremap = true, silent = true
 
 -- Shortcut for deleting current buffer
 vim.keymap.set('n', '<leader>q', ':bd<CR>', { noremap = true, silent = true })
+
+-- Shortcut for neogit
+vim.keymap.set('n', '<leader>ng', ':Neogit<CR>', { noremap = true, silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
