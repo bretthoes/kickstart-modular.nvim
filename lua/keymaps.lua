@@ -32,6 +32,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Shortcut for opening netrw explorer
 vim.keymap.set('n', '<leader>e', ':Explore<CR>', { noremap = true, silent = true })
 
+-- Shortcut for deleting current buffer
+vim.keymap.set('n', '<leader>q', ':bd<CR>', { noremap = true, silent = true })
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
