@@ -23,40 +23,23 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  -- Show git changes in sign column, some useful keybinds for visualizing and operating on hunks in current buffer
   require 'kickstart/plugins/gitsigns',
 
-  -- Show command options in window when using leader key and other commands
   require 'kickstart/plugins/which-key',
 
-  -- Fuzzy finder and file navigator. <Leader>sh to search help, <Leader>sk to search keybindings
   require 'kickstart/plugins/telescope',
 
-  -- Setup LSPs on a per-language basis
   require 'kickstart/plugins/lspconfig',
 
-  -- Auto-formatter. <Leader>f to manually format current document
   require 'kickstart/plugins/conform',
 
-  -- Auto-completions. Ctrl Space to manually trigger; tab/shift tab to navigate suggestions, enter to confirm
   require 'kickstart/plugins/cmp',
 
-  -- Theme. :colorscheme to manually change this
-  require 'kickstart/plugins/kanagawa',
-
-  -- Highlight and search for Todo comments and other specific keywords; use :TodoTelescope to view all Todos with Telescope
   require 'kickstart/plugins/todo-comments',
 
-  -- Smarter surround text replacement, other miscellaneous nice-to-haves
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
-
-  -- Plugin for calling lazygit within neovim
-  require 'kickstart/plugins/lazygit',
-
-  -- Interactive Git interface for Neovim
-  require 'kickstart/plugins/neogit',
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
@@ -72,7 +55,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
