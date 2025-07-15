@@ -81,6 +81,9 @@ return {
   config = function()
     local dap = require 'dap'
     local dapui = require 'dapui'
+    local dap_python = require 'dap-python'
+
+    dap_python.setup 'python3'
 
     require('mason-nvim-dap').setup {
       -- Makes a best effort to setup the various debuggers with

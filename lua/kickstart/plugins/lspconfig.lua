@@ -259,6 +259,20 @@ return {
         ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
         automatic_installation = false,
         handlers = {
+          pyright = function()
+            require('lspconfig').pyright.setup {
+              capabilities = capabilities,
+              settings = {
+                python = {
+                  analysis = {
+                    autoImportCompletions = true,
+                    autoSearchPaths = true,
+                    useLibraryCodeForTypes = true,
+                  },
+                },
+              },
+            }
+          end,
           function(server_name)
             local server = servers[server_name] or {}
             -- This handles overriding only values explicitly passed
