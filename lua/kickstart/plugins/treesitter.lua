@@ -6,6 +6,7 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = { 'bash', 'c', 'c_sharp', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'python', 'query', 'vim', 'vimdoc' },
+      ignore_install = { 'markdown', 'gitcommit' }, -- NOTE having trouble with these two file types
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
